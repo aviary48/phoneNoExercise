@@ -1,4 +1,4 @@
-package com.jumia.phoneNumbersExc.Dao;
+package com.jumia.phoneNumbersExc.Dialect;
 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.function.SQLFunctionTemplate;

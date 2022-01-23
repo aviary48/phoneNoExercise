@@ -11,12 +11,21 @@ public class Customer {
     @Id
     @Column(name = "id", length = 50, unique = true , columnDefinition = "int")
     public int id;
+
+
+
     @Column(name = "name", length = 50 )
     public String name;
     @Column(name = "phone", length = 50 )
     public String phone;
 
+    public Customer(int id, String name, String phone) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+    }
 
+    public Customer() {}
 
 
     public int getId() {
@@ -45,7 +54,14 @@ public class Customer {
     }
 
 
-
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
+    }
 
 
 

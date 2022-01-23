@@ -17,8 +17,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-	//implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.7.2'
 	implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.16.1'
+
+	compileOnly 'org.projectlombok:lombok:1.18.22'
+	annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+	implementation group: 'com.querydsl', name: 'querydsl-jpa', version: '5.0.0'
+	implementation group: 'com.querydsl', name: 'querydsl-apt', version: '5.0.0'
 
 
 }
