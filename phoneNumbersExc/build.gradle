@@ -25,6 +25,11 @@ dependencies {
 	implementation group: 'com.querydsl', name: 'querydsl-jpa', version: '5.0.0'
 	implementation group: 'com.querydsl', name: 'querydsl-apt', version: '5.0.0'
 
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.6.3'
+
+	//implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time', version: '3.0.4.RELEASE'
+
+
 
 }
 
