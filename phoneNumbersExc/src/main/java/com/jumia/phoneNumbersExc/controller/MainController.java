@@ -44,6 +44,25 @@ public class MainController {
     }
 
 
+    @GetMapping("/")
+    public String home(Model model){
+
+
+        List<CustomerDetailsDTO>listOfAllCustomers = null;
+        try{
+
+            listOfAllCustomers = customerService.listAllCustomers();
+
+            model.addAttribute("allCustomers", listOfAllCustomers);
+
+        }catch (Exception e){
+            log.error("++++"+ className+" Error  in getAllCustomer is: {}",e.getMessage());
+        }
+
+        return "index";
+    }
+
+
 
 
 
