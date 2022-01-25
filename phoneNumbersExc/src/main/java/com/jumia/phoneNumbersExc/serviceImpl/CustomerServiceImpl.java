@@ -1,5 +1,6 @@
 package com.jumia.phoneNumbersExc.serviceImpl;
 
+import com.jumia.phoneNumbersExc.utils.PhoneNumberValidator;
 import com.jumia.phoneNumbersExc.utils.Utilities;
 import com.jumia.phoneNumbersExc.dao.CustomerRepository;
 import com.jumia.phoneNumbersExc.dto.CustomerDetailsDTO;
@@ -38,7 +39,7 @@ public class CustomerServiceImpl implements CustomerService {
 
                 allCustomersList.forEach( items -> {
 
-                    items.setState(Utilities.validatePhoneNumber(items.getPhone()));
+                    items.setState(PhoneNumberValidator.validatePhoneNumber(items.getPhone()));
 
                     items.setCountry(Utilities.getCountryNameByCountryCode(items.getPhone()));
 

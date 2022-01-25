@@ -12,11 +12,6 @@ public class Utilities {
     private static final String className = Utilities.class.getSimpleName();
 
 
-    private static final String CAMEROON_PHONE_NUMBER_REGEX = "\\(237\\)\\ ?[2368]\\d{7,8}$";
-    private static final String ETHIOPIA_PHONE_NUMBER_REGEX = "\\(251\\)\\ ?[1-59]\\d{8}$";
-    private static final String MOROCCO_PHONE_NUMBER_REGEX = "\\(212\\)\\ ?[5-9]\\d{8}$";
-    private static final String MOZAMBIQUE_PHONE_NUMBER_REGEX = "\\(258\\)\\ ?[28]\\d{7,8}$";
-    private static final String UGANDA_PHONE_NUMBER_REGEX = "\\(256\\)\\ ?\\d{9}$";
 
 
 
@@ -58,7 +53,7 @@ public class Utilities {
         return countryCode;
     }
 
-
+/*
     public static String validatePhoneNumber(String phone){
 
         String result = null;
@@ -164,6 +159,6 @@ public class Utilities {
         return result;
     }
 
-
+*/
 
 }
