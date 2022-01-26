@@ -65,7 +65,6 @@ public class MainController {
             List<CustomerDetailsDTO> filteredList = listOfAllCustomers.stream()
                     .filter(record -> (record.getState()).equals(finalPhoneState) && (record.getCountryCode()).contains(countryCode) )
                     .collect(Collectors.toList());
-
             countriesList = getCountries();
 
             model.addAttribute("allCustomers", filteredList);
