@@ -14,4 +14,4 @@
   > `  docker ps -a | grep jumiatakehome `
 
 ### Step 5: Check application logs to make sure app run successfully
-  > ` docker logs -f bootdocker `
+  > ` docker logs -f jumiatakehome `
