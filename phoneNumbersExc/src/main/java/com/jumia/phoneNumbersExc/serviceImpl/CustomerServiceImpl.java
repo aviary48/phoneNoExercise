@@ -19,12 +19,14 @@ public class CustomerServiceImpl implements CustomerService {
     private static final String className = CustomerServiceImpl.class.getSimpleName();
 
     private final CustomerRepository customerRepository ;
+    private  final PhoneNumberValidator phoneNumberValidator;
 
 
 
 
-    public CustomerServiceImpl(CustomerRepository customerRepository) {
+    public CustomerServiceImpl(CustomerRepository customerRepository, PhoneNumberValidator phoneNumberValidator) {
         this.customerRepository = customerRepository;
+        this.phoneNumberValidator = phoneNumberValidator;
     }
 
 

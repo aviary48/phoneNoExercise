@@ -19,7 +19,7 @@ class PhoneNumberValidatorTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"(251) 911203317,valid","(237) 6A0311634, invalid","(212) 691933626,valid"})
+    @CsvSource({"(251) 911203317,valid","(237) 6A0311634, invalid","(212) 691933626,valid" })
     void itShouldValidatePhoneNumber(String phone, String expected ) {
 
         //When
